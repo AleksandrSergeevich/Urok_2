@@ -5,6 +5,7 @@ public class Main {
         arrOne();
         arrMultiply();
         arrMany();
+        MaxMin();
     }
 
     public static void arr() {
@@ -78,15 +79,22 @@ public class Main {
             }
             System.out.println();
         }
+        System.out.println();
+        System.out.println();
+    }
 
+    public static void MaxMin() {
+        int[] arr = {23,48,93,8,6,87,125,93,3,5,7,1,5,9,6,54,82,};
+        int max = arr[0];
+        int min = arr[0];
+        for (int i = 0; i != arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        System.out.println(min + " " + max);
     }
 }
-
-
-
-
-
-
-
-
-
